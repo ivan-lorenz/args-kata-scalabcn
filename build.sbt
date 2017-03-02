@@ -11,6 +11,13 @@ lazy val marc_aleix = (project in file("marc_aleix"))
     libraryDependencies ++= libraryDependenciesProd ++ libraryDependenciesTest
   )
 
+lazy val ignasi_ivan = (project in file("ignasi_ivan"))
+  .settings(
+    name                := "ignasi_ivan",
+    scalaVersion        := "2.12.1",
+    libraryDependencies ++= libraryDependenciesProd ++ libraryDependenciesTest
+  )
+
 /** ********* PROD DEPENDENCIES *****************/
 lazy val libraryDependenciesProd = Seq(
   "com.github.nscala-time" %% "nscala-time" % "2.16.0",
